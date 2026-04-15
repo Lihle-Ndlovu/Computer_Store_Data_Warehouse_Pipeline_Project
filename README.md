@@ -1,8 +1,7 @@
 ### Computer Store Data Warehouse Pipeline Project
 
 #### Project Overview
-
-In this project I demonstrated my ability to build a basic data pipeline and design a data warehouse using SQL. I worked with raw data, cleaned and structured it, and transformed it into a star schema model to support reporting and analysis.
+In this project I demonstrated my ability to design and implementation of a basic data pipeline and data warehouse using SQL. Raw data was extracted, cleaned, and transformed into a structured star schema model to support efficient reporting and analysis.
 
 #### Project Objectives
 * Transform raw data into a structured, analysis-ready format.
@@ -12,7 +11,7 @@ In this project I demonstrated my ability to build a basic data pipeline and des
 
 #### Data Model (Star Schema)
 The project follows a Star Schema Design:
-#### Fact Table
+#### Fact Table (Stores quantitative business metrics and includes foreign keys to related dimension tables).
 ##### Fact_Sales (Contains measurable business data) such as:
 * Cost Price
 * Total Sales
@@ -22,7 +21,7 @@ The project follows a Star Schema Design:
 * Cost of Repairs
 * Finance Amoun
 
-#### Dimension Tables (tables provide descriptive context for analysis)
+#### Dimension Tables (Store descriptive attributes that provide context for analysis and are linked to fact tables via keys)
 * Dim_Customer
 * Dim_Product
 * Dim_Date
@@ -34,43 +33,39 @@ The project follows a Star Schema Design:
 * Dim_store
 
 #### ETL Pipeline Process
+
 1. Extract
-* Raw data loaded into a staging table
+
+Loaded raw data into a staging database
+
 2. Transform
-* Removed duplicates
-* Handled missing values
-* Standardized formats
-* Grouped related data into dimensions
+
+* Removed duplicates and handled missing values
+* Standardized data formats for consistency
+* Structured data into dimension tables
+
 3. Load
-* Loaded cleaned data into:
-* Dimension tables
-* Fact table
+
+* Loaded transformed data into:
+  * Dimension tables
+  * Fact table with appropriate foreign key relationships
   
-### Tools & Technologies used
-* SQL Server
-* Draw.io (for schema design)
-* Git & GitHub
+#### Tools & Technologies Used
+* SQL Server – Data storage and querying
+* Draw.io – Schema and data model design
+* Git & GitHub – Version control and project management
 
 #### Skills Demonstrated
-* Data Cleaning
-* Data Transformation
-* Dimensional Modeling
-* Star Schema Design
-* Primary & Foreign Key Relationships
-* Writing SQL Queries
+* Data cleaning and transformation
+* Dimensional modeling (star schema design)
+* Designing primary and foreign key relationships
+* Writing and optimizing SQL queries
 
 #### Key Learnings
-* How to structure raw data into a usable format
-* Importance of separating facts and dimensions
-* How relationships improve data analysis
-* Basics of building a data pipeline
-
-#### Skills demonstrated:
-
-* Data engineering fundamentals
-* SQL development
-* Data warehouse design
-* Building scalable data pipelines
+* Structuring raw data into an analysis-ready format
+* Understanding the importance of fact and dimension table separation
+* Designing relationships to improve data analysis and query efficiency
+* Fundamentals of building an end-to-end data pipeline
 
 #### Remarks
 This beginner-friendly project strengthened my understanding of data engineering and data warehousing concepts, including data cleaning, transformation, and dimensional modeling.
