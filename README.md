@@ -4,30 +4,34 @@
 
 In this project I demonstrated my ability to build a basic data pipeline and design a data warehouse using SQL. I worked with raw data, cleaned and structured it, and transformed it into a star schema model to support reporting and analysis.
 
-* Project Objectives
-* Convert raw/unstructured data into a structured format
+#### Project Objectives
+* Transform raw data into a structured, analysis-ready format.
 * Design a simple and efficient data warehouse
 * Apply ETL (Extract, Transform, Load) processes
 * Practice SQL development and data modeling
 
 #### Data Model (Star Schema)
-
 The project follows a Star Schema Design:
-
 #### Fact Table
-##### Fact_Sales
-* Contains measurable business data such as:
-* Sales amount
-* Quantity
-* Discounts
+##### Fact_Sales (Contains measurable business data) such as:
+* Cost Price
+* Total Sales
+* Sale Price
+* Discount Amount
+* PC Market Price
+* Cost of Repairs
+* Finance Amoun
 
-#### Dimension Tables (tables provide descriptive context for analysis).
+#### Dimension Tables (tables provide descriptive context for analysis)
 * Dim_Customer
 * Dim_Product
 * Dim_Date
 * Dim_Location
 * Dim_Payment
 * Dim_Channel
+* Dim_Priority
+* Dim_Deparment
+* Dim_store
 
 #### ETL Pipeline Process
 1. Extract
@@ -69,4 +73,4 @@ The project follows a Star Schema Design:
 * Building scalable data pipelines
 
 #### Remarks
-This beginner-friendly project strengthenened my understanding of data engineering and data warehousing concepts.
+This beginner-friendly project strengthened my understanding of data engineering and data warehousing concepts, including data cleaning, transformation, and dimensional modeling.
