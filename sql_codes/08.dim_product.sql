@@ -10,6 +10,7 @@ SELECT DISTINCT
 INTO [Staging_Computer_Store].[dbo].[Dim_Product]
 FROM [Staging_Computer_Store].[dbo].[raw_computer_sales];
 
+--------Inserting into Dim_Product table(adding primary Key)
 
 DROP TABLE [Staging_Computer_Store].[dbo].[Dim_Product]
 CREATE TABLE [Staging_Computer_Store].[dbo].[Dim_Product](
