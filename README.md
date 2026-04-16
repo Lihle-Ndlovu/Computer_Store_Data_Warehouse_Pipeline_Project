@@ -71,6 +71,7 @@ Loaded raw data into a staging database
 This beginner-friendly project strengthened my understanding of data engineering and data warehousing concepts, including data cleaning, transformation, and dimensional modeling.
 
  #### Architecture Overview
-![Star Schema](schema_table/Star_Schema.png)
- 
+<p align="center">
+  <img src="schema_table/Star_Schema.png" width="700"/>
+</p>
 
