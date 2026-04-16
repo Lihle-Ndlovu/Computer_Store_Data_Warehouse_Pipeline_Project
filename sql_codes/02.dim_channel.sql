@@ -5,7 +5,7 @@ SELECT DISTINCT
 INTO [Staging_Computer_Store].[dbo].[Dim_Channel]
 FROM [Staging_Computer_Store].[dbo].[raw_computer_sales];
 
-----Dim_Channel
+----Inserting into Dim_Channel table(adding primary Key)Dim_Channel
 DROP TABLE[Staging_Computer_Store].[dbo].[Dim_Channel]
 CREATE TABLE[Staging_Computer_Store].[dbo].[Dim_Channel](
     [ChannelID] INT IDENTITY (1,1) PRIMARY KEY,
