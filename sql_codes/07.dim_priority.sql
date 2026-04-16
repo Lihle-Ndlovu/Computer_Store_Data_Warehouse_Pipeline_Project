@@ -6,6 +6,7 @@ SELECT DISTINCT
 INTO [Staging_Computer_Store].[dbo].[Dim_Priority]
 FROM [Staging_Computer_Store].[dbo].[raw_computer_sales];
 
+--------Inserting into Dim_Priority table(adding primary Key)
 DROP TABLE [Staging_Computer_Store].[dbo].[Dim_Priority]
 CREATE TABLE [Staging_Computer_Store].[dbo].[Dim_Priority](
     [PriorityID] INT IDENTITY (1,1) PRIMARY KEY,
