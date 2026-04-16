@@ -8,7 +8,7 @@ INTO [Staging_Computer_Store].[dbo].[Dim_Date]
 FROM [Staging_Computer_Store].[dbo].[raw_computer_sales];
 
 
-----Dim_Date
+--------Inserting into Dim_Date table(adding primary Key)
 DROP TABLE[Staging_Computer_Store].[dbo].[Dim_Date]
 CREATE TABLE [Staging_Computer_Store].[dbo].[Dim_Date](
     [DateID] INT IDENTITY (1,1) PRIMARY KEY,
