@@ -7,6 +7,8 @@ SELECT DISTINCT
 INTO [Staging_Computer_Store].[dbo].[Dim_Store]
 FROM [Staging_Computer_Store].[dbo].[raw_computer_sales];
 
+--------Inserting into Dim_Store table(adding primary Key)
+
 DROP TABLE [Staging_Computer_Store].[dbo].[Dim_Store]
 CREATE TABLE [Staging_Computer_Store].[dbo].[Dim_Store](
     [StoreID] INT IDENTITY (1,1) PRIMARY KEY,
