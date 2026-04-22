@@ -1,6 +1,18 @@
 
 ---Dim_Department
 
+<<<<<<< HEAD
+=======
+DROP TABLE IF EXISTS [Staging_Computer_Store].[dbo].[Dim_Department];
+SELECT DISTINCT
+       [Sales_Person_Name]
+      ,[Sales_Person_Department]
+INTO [Staging_Computer_Store].[dbo].[Dim_Department]
+FROM [Staging_Computer_Store].[dbo].[raw_computer_sales];
+
+--------Inserting into Dim_Department table(adding primary Key)
+
+>>>>>>> a4b0cc0bb4bb0a4891bd8fc065d380d50b3cdf47
 DROP TABLE [Staging_Computer_Store].[dbo].[Dim_Department]
 CREATE TABLE [Staging_Computer_Store].[dbo].[Dim_Department](
     [DepartmentID] INT IDENTITY (1,1) PRIMARY KEY,

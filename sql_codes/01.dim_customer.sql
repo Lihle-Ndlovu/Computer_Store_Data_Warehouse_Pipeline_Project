@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 -----Dim Customer
+=======
+----Inserting into Dim Customer table(adding primary Key)
+>>>>>>> a4b0cc0bb4bb0a4891bd8fc065d380d50b3cdf47
 
 DROP TABLE [Staging_Computer_Store]. [dbo].[Dim_Customer]
 CREATE TABLE[Staging_Computer_Store]. [dbo].[Dim_Customer](
@@ -26,4 +30,8 @@ SELECT DISTINCT
     Customer_Email_Address
 FROM [Staging_Computer_Store].[dbo].[raw_computer_sales];
 
+<<<<<<< HEAD
 --select * FROM [Staging_Computer_Store]. [dbo].[Dim_Customer]
+=======
+---select * FROM [Staging_Computer_Store]. [dbo].[Dim_Customer]
+>>>>>>> a4b0cc0bb4bb0a4891bd8fc065d380d50b3cdf47

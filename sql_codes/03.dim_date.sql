@@ -26,5 +26,24 @@ FROM (
 WHERE FullDate IS NOT NULL;
 
 
+<<<<<<< HEAD
+=======
+--------Inserting into Dim_Date table(adding primary Key)
+DROP TABLE[Staging_Computer_Store].[dbo].[Dim_Date]
+CREATE TABLE [Staging_Computer_Store].[dbo].[Dim_Date](
+    [DateID] INT IDENTITY (1,1) PRIMARY KEY,
+	[Purchase_Date] [date] NOT NULL,
+	[Ship_Date] [nvarchar](50) NOT NULL
+)
+>>>>>>> a4b0cc0bb4bb0a4891bd8fc065d380d50b3cdf47
 
 
+<<<<<<< HEAD
+=======
+SELECT DISTINCT 
+                [Purchase_Date],
+                [Ship_Date]
+FROM [Staging_Computer_Store].[dbo].[raw_computer_sales]
+
+---select * FROM [Staging_Computer_Store]. [dbo].[Dim_Date]
+>>>>>>> a4b0cc0bb4bb0a4891bd8fc065d380d50b3cdf47

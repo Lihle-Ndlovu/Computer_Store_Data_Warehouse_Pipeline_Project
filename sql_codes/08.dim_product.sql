@@ -1,5 +1,20 @@
 ----Dim_Product
 
+<<<<<<< HEAD
+=======
+DROP TABLE IF EXISTS [Staging_Computer_Store].[dbo].[Dim_Product];
+SELECT DISTINCT
+       [PC_Make]
+      ,[PC_Model]
+      ,[Storage_Type]
+      ,[RAM]
+       [Storage_Capacity]
+INTO [Staging_Computer_Store].[dbo].[Dim_Product]
+FROM [Staging_Computer_Store].[dbo].[raw_computer_sales];
+
+--------Inserting into Dim_Product table(adding primary Key)
+
+>>>>>>> a4b0cc0bb4bb0a4891bd8fc065d380d50b3cdf47
 DROP TABLE [Staging_Computer_Store].[dbo].[Dim_Product]
 CREATE TABLE [Staging_Computer_Store].[dbo].[Dim_Product](
     [ProductID] INT IDENTITY (1,1) PRIMARY KEY,
@@ -24,4 +39,8 @@ SELECT DISTINCT
            [Storage_Capacity]
 FROM [Staging_Computer_Store].[dbo].[raw_computer_sales]
 
+<<<<<<< HEAD
 ---select * FROM [Staging_Computer_Store]. [dbo].[Dim_Product]
+=======
+--select * FROM [Staging_Computer_Store]. [dbo].[Dim_Product]
+>>>>>>> a4b0cc0bb4bb0a4891bd8fc065d380d50b3cdf47
