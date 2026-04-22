@@ -1,14 +1,5 @@
----Dim Customer( selecting into) creating Dim Customer table.
-DROP TABLE IF EXISTS [Staging_Computer_Store].[dbo].[Dim_Customer];
-SELECT DISTINCT
-       [Customer_Name]
-      ,[Customer_Surname]
-      ,[Customer_Contact_Number]
-      ,[Customer_Email_Address]
-INTO [Staging_Computer_Store].[dbo].[Dim_Customer]
-FROM [Staging_Computer_Store].[dbo].[raw_computer_sales];
 
------Inserting into Dim Customer table(adding primary Key)
+-----Dim Customer
 
 DROP TABLE [Staging_Computer_Store]. [dbo].[Dim_Customer]
 CREATE TABLE[Staging_Computer_Store]. [dbo].[Dim_Customer](
@@ -16,7 +7,8 @@ CREATE TABLE[Staging_Computer_Store]. [dbo].[Dim_Customer](
 	[Customer_Name] [nvarchar](50) NOT NULL,
 	[Customer_Surname] [nvarchar](50) NOT NULL,
 	[Customer_Contact_Number] [nvarchar](50) NOT NULL,
-	[Customer_Email_Address] [nvarchar](50) NOT NULL
+	[Customer_Email_Address] [nvarchar](50) NOT NULL,
+    [Load_date] DATETIME DEFAULT GETDATE()
 )
 
 
@@ -34,4 +26,4 @@ SELECT DISTINCT
     Customer_Email_Address
 FROM [Staging_Computer_Store].[dbo].[raw_computer_sales];
 
----select * FROM [Staging_Computer_Store]. [dbo].[Dim_Customer]
+--select * FROM [Staging_Computer_Store]. [dbo].[Dim_Customer]
