@@ -1,10 +1,11 @@
 USE [Staging_Computer_Store]
 GO
 
-DECLARE	@return_value int
+DECLARE @RC int
 
-EXEC	@return_value = [dbo].[sp_fact_table]
+-- TODO: Set parameter values here.
 
-SELECT	'Return Value' = @return_value
-
+EXECUTE @RC = [dbo].[sp_fact_table] 
 GO
+
+
